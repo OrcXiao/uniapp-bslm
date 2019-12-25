@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/earnings/index",
+    "pages/manage/index",
+    "pages/home/noticeCenter",
+    "pages/home/notice",
+    "pages/sidebar/activationCode"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#4B81E2"
+  },
+  "tabBar": {
+    "color": "#BFBFBF",
+    "selectedColor": "#4B81E2",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/img/home/home_tabbar_icon_home_nol.png",
+        "selectedIconPath": "static/img/home/home_tabbar_icon_home_sel.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/earnings/index",
+        "iconPath": "static/img/earnings/home_tabbar_icon_profit_nor.png",
+        "selectedIconPath": "static/img/earnings/home_tabbar_icon_profit_sel.png",
+        "text": "收益"
+      },
+      {
+        "pagePath": "pages/manage/index",
+        "iconPath": "static/img/manage/home_tabbar_icon_control_nor.png",
+        "selectedIconPath": "static/img/manage/home_tabbar_icon_control_sel.png",
+        "text": "管理"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "robot",
+  "compilerVersion": "2.4.6",
+  "usingComponents": {}
+}

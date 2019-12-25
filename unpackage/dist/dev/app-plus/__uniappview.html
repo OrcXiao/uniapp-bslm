@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"robot","entryPagePath":"pages/home/index.html","page":{"pages/home/index.html":{"window":{"navigationBarTitleText":"首页","navigationStyle":"custom","usingComponents":{}}},"pages/earnings/index.html":{"window":{"navigationBarTitleText":"收益","usingComponents":{}}},"pages/manage/index.html":{"window":{"navigationBarTitleText":"管理","usingComponents":{}}},"pages/home/noticeCenter.html":{"window":{"navigationBarTitleText":"公告中心","usingComponents":{}}},"pages/home/notice.html":{"window":{"navigationBarTitleText":"公告","usingComponents":{}}},"pages/sidebar/activationCode.html":{"window":{"navigationBarTitleText":"我的激活码","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#4B81E2"}},"tabBar":{"color":"#BFBFBF","selectedColor":"#4B81E2","backgroundColor":"","borderStyle":"black","list":[{"pagePath":"pages/home/index.html","iconPath":"static/img/home/home_tabbar_icon_home_nol.png","selectedIconPath":"static/img/home/home_tabbar_icon_home_sel.png","text":"首页"},{"pagePath":"pages/earnings/index.html","iconPath":"static/img/earnings/home_tabbar_icon_profit_nor.png","selectedIconPath":"static/img/earnings/home_tabbar_icon_profit_sel.png","text":"收益"},{"pagePath":"pages/manage/index.html","iconPath":"static/img/manage/home_tabbar_icon_control_nor.png","selectedIconPath":"static/img/manage/home_tabbar_icon_control_sel.png","text":"管理"}],"position":"bottom","fontSize":"10px","iconWidth":"24px","spacing":"3px"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/home/index","pages/earnings/index","pages/manage/index","pages/home/noticeCenter","pages/home/notice","pages/sidebar/activationCode"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.4.6","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

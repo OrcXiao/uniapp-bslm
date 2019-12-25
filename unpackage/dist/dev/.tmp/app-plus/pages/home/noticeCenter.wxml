@@ -1,0 +1,1 @@
+<view class="noticeCenter-wrap data-v-0c853939"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="item pd30 dis_fl ju_sb data-v-0c853939"><view class="fs28 cl505050 data-v-0c853939">{{''+item.text+''}}</view><image class="arrow data-v-0c853939" src="../../static/img/common/common_icon_arrow.png" mode></image></view></block></view>

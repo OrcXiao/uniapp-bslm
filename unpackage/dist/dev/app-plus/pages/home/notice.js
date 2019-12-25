@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"notice-wrap.",[1],"data-v-1cedb444 { margin-top: ",[0,30],"; background: #ffffff; }\n.",[1],"notice-wrap \x3e .",[1],"head.",[1],"data-v-1cedb444 { font-weight: 700; }\n",],undefined,{path:"./pages/home/notice.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/home/notice.wxml') } }));

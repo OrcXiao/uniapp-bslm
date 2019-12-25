@@ -1,0 +1,53 @@
+view{box-sizing: border-box;}
+page{background-color: #fafafa;}
+//字体对齐方式
+.tc{text-align: center;}
+.tr{text-align: right;}
+.tl{text-align: left;}
+
+//圆角
+.br12{border-radius: 12upx;}
+.br10{border-radius: 10upx;}
+.br8{border-radius: 10upx;}
+
+//改变显示属性
+.dis_fl{display: flex;}
+.dis_bl{display: block;}
+.dis_ib{display: inline-block;}
+
+//弹性盒子模型对齐方式
+.ju_sb{justify-content: space-between;}
+.ju_ct{justify-content: center;}
+
+//字体大小
+.fs12{font-size: 12upx;}
+.fs14{font-size: 14upx;}
+.fs16{font-size: 16upx;}
+.fs18{font-size: 18upx;}
+.fs20{font-size: 20upx;}
+.fs22{font-size: 22upx;}
+.fs24{font-size: 24upx;}
+.fs26{font-size: 26upx;}
+.fs28{font-size: 28upx;}
+.fs30{font-size: 30upx;}
+.fs32{font-size: 32upx;}
+.fs34{font-size: 34upx;}
+.fs36{font-size: 36upx;}
+.fs38{font-size: 38upx;}
+.fs40{font-size: 40upx;}
+
+//字体颜色
+.cl4B81E2{color: #4B81E2;}
+.cl505050{color: #505050;}
+.clffffff{color: #ffffff;}
+.cl979797{color: #979797;}
+
+//长度和宽度
+.wd100{width: 100%;}
+.wd100{height: 100%;}
+
+//内边距
+.pd30{padding: 30upx;}
+
+//外边距
+.mg30{margin: 30upx;}

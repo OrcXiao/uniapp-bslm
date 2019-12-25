@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n",],undefined,{path:"./pages/sidebar/activationCode.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/sidebar/activationCode.wxml') } }));
